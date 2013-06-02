@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Sports teams default view title">
+		<message>Sports teams default view</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_team/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				type="team"
+				label="Sports teams greeting label"
+				description="com_team field greeting"
+			/>
+		</fieldset>
+	</fields>
+</metadata>
+
