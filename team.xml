@@ -54,7 +54,7 @@
 		<files folder="admin">
 			<!-- Admin Main File Copy Section -->
 			<filename>index.html</filename>
-			<filename>helloworld.php</filename>
+			<filename>team.php</filename>
 			<filename>controller.php</filename>
 			<!-- SQL files section -->
 			<folder>sql</folder>
