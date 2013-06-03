@@ -13,21 +13,12 @@
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
-// import Joomla controlleradmin library
-jimport('joomla.application.component.controlleradmin');
+// import Joomla controllerform library
+jimport('joomla.application.component.controllerform');
 
 /**
- * HelloWorlds Controller
+ * HelloWorld Controller
  */
-class TeamControllerTeams extends JControllerAdmin
+class TeamControllerteambasketball extends JControllerForm
 {
-	/**
-	 * Proxy for getModel.
-	 * @since	1.6
-	 */
-	public function getModel($name = 'Team', $prefix = 'TeamModel')
-	{
-		$model = parent::getModel($name, $prefix, array('ignore_request' => true));
-		return $model;
-	}
 }

@@ -66,6 +66,7 @@
 			<folder>views</folder>
 			<!-- controllers files section -->
 			<folder>controllers</folder>
+            <folder>helpers</folder>
 		</files>
 
 		<languages folder="admin">

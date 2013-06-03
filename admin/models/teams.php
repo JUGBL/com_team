@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @version		$Id: teams.php 46 2010-11-21 17:27:33Z chdemko $
+ * @version		$Id: team.php 46 2010-11-21 17:27:33Z chdemko $
  * @package		Joomla16.Tutorials
  * @subpackage	Components
  * @copyright	Copyright (C) 2005 - 2010 Open Source Matters, Inc. All rights reserved.
@@ -30,7 +30,9 @@ class TeamModelTeams extends JModelList
 	{
 		// Create a new query object.
 		$db = JFactory::getDBO();
-		$query = $db->getQuery(true);
+
+        /*
+        $query = $db->getQuery(true);
 
 		// Select some fields
 		$query->select('id,greeting');
@@ -38,6 +40,10 @@ class TeamModelTeams extends JModelList
 		// From the hello table
         //Check for table name later!!!!
 		$query->from('#__helloworld');
+
+        */
+
+        $query = "SELECT * FROM #__sports_teams";
 		return $query;
 	}
 }

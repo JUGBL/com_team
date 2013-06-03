@@ -6,6 +6,7 @@ defined('_JEXEC') or die('Restricted access');
 // import joomla controller library
 jimport('joomla.application.component.controller');
 
+JLoader::register('TeamHelper', dirname(__FILE__) . DS . 'helpers' . DS . 'team.php');
 // Get an instance of the controller prefixed by HelloWorld
 $controller = JController::getInstance('Team');
 

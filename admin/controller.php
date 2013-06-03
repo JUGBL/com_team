@@ -33,5 +33,10 @@ class TeamController extends JController
 
 		// call parent behavior
 		parent::display($cachable);
+
+        $view = strtolower(JRequest::getVar('view'));
+
+        // Set the submenu
+        TeamHelper::addSubmenu($view);
 	}
 }

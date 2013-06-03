@@ -19,7 +19,7 @@ jimport('joomla.application.component.view');
 /**
  * HelloWorlds View
  */
-class TeamViewTeams extends JView
+class TeamViewteamsoccer extends JView
 {
 	function display($tpl = null) 
 	{
