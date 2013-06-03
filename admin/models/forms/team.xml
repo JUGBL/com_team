@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: team.xml 51 2010-11-22 01:33:21Z chdemko $ -->
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="greeting"
+			type="text"
+			label="Sports teams greeting label"
+			description="Sports teams greeting"
+			size="40"
+			class="inputbox"
+			default=""
+		/>
+	</fieldset>
+</form>
