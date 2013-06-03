@@ -2,7 +2,7 @@
 <!-- $Id: team.xml 14 2009-11-02 18:35:20Z chdemko $ -->
 <extension type="component" version="1.6.0" method="upgrade">
 
-	<name>Sports teams component!</name>
+	<name>com_team</name>
 	<!-- The following elements are optional and free of formatting conttraints -->
 	<creationDate>2013</creationDate>
 	<author>Alex</author>
@@ -11,7 +11,7 @@
 	<copyright>Copyright Info</copyright>
 	<license>License Info</license>
 	<!--  The version string is recorded in the components table -->
-	<version>1.0.0</version>
+	<version>0.0.9</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_TEAM_DESCRIPTION</description>
 
