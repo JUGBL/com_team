@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="Sports teams default view title">
-		<message>Sports teams default view</message>
+	<layout title="COM_TEAM_TEAM_VIEW_DEFAULT_TITLE">
+		<message>COM_TEAM_TEAM_VIEW_DEFAULT_DESC</message>
 	</layout>
 	<fields
 		name="request"
@@ -11,8 +11,8 @@
 			<field
 				name="id"
 				type="team"
-				label="Sports teams greeting label"
-				description="com_team field greeting"
+				label="COM_TEAM_TEAM_FIELD_GREETING_LABEL"
+				description="COM_TEAM_TEAM_FIELD_GREETING_DESC"
 			/>
 		</fieldset>
 	</fields>

@@ -9,7 +9,7 @@ jimport('joomla.application.component.view');
 /**
  * HTML View class for the Team Component
  */
-class TeamViewHelloWorld extends JView
+class TeamViewTeam extends JView
 {
 	// Overwriting JView display method
 	function display($tpl = null) 
