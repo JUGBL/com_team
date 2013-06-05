@@ -20,9 +20,10 @@ class TeamViewTeam extends JView
 		// get the Data
 		$form = $this->get('Form');
 		$item = $this->get('Item');
+        $players = $this->get('Players', $item->$id);
 
 		// Check for errors.
-		if (count($errors = $this->get('Errors'))) 
+		if (count($errors = $this->get('Errors')))
 		{
 			JError::raiseError(500, implode('<br />', $errors));
 			return false;

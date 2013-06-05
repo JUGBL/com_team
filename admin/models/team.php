@@ -68,4 +68,14 @@ class TeamModelTeam extends JModelAdmin
 		}
 		return $data;
 	}
+    protected function getPlayers($id)
+    {
+        $db = JFactory::getDBO();
+
+        $query = "SELECT name, birth_date, position, season_played_games, total_played_games, score, biography FROM #__sports_teams_players WHERE team_id = ".$id;
+
+        $db->setQuery($query);
+
+        return $db->loadObjectList();
+    }
 }

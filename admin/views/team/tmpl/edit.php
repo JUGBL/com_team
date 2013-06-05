@@ -16,11 +16,20 @@ JHtml::_('behavior.tooltip');
 	<fieldset class="adminform">
 		<legend><?php echo JText::_( 'COM_TEAM_TEAM_DETAILS' ); ?></legend>
 		<ul class="adminformlist">
-<?php foreach($this->form->getFieldset() as $field): ?>
+<?php foreach($this->form->getFieldset('team_deatils') as $field): ?>
 			<li><?php echo $field->label;echo $field->input;?></li>
 <?php endforeach; ?>
 		</ul>
 	</fieldset>
+    <br /><br />
+    <fieldset class="adminform">
+        <legend><?php echo JText::_( 'COM_TEAM_TEAM_PYALER_DETAILS' ); ?></legend>
+        <ul class="adminformlist">
+            <?php foreach($this->form->getFieldset('player_deatils') as $field): ?>
+                <li><?php echo $field->input;?></li>
+            <?php endforeach; ?>
+        </ul>
+    </fieldset>
 	<div>
 		<input type="hidden" name="task" value="team.edit" />
 		<?php echo JHtml::_('form.token'); ?>
