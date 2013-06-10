@@ -41,7 +41,7 @@
                 type="hidden"
                 />
         <field
-                name="name"
+                name="player_name"
                 type="text"
                 label=""
                 description="Player's name"

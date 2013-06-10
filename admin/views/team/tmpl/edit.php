@@ -26,7 +26,10 @@ JHtml::_('behavior.tooltip');
         <legend><?php echo JText::_( 'COM_TEAM_TEAM_PYALER_DETAILS' ); ?></legend>
         <ul class="adminformlist">
             <?php foreach($this->form->getFieldset('player_deatils') as $field): ?>
-                <li><?php echo $field->input;?></li>
+                <li><?php
+                    die('<pre>'.print_r($field, true).'</pre>');
+                    echo $field->input;?>
+                </li>
             <?php endforeach; ?>
         </ul>
     </fieldset>
