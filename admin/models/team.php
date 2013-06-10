@@ -64,8 +64,26 @@ class TeamModelTeam extends JModelAdmin
 		$data = JFactory::getApplication()->getUserState('com_team.edit.team.data', array());
 		if (empty($data)) 
 		{
-			$data = $this->getItem();
+			$data = array($this->getItem());
+            $var = $this->getPlayers($data[0]->id);
+            $data[0]->player_name = $var[0]->name;
+            $data[0]->birth_date = $var[0]->birth_date;
+            $data[0]->position = $var[0]->position;
+            $data[0]->season_played_games = $var[0]->season_played_games;
+            $data[0]->total_played_games = $var[0]->total_played_games;
+            $data[0]->score = $var[0]->score;
 		}
+        //die('<pre>'.print_r($data, true).'</pre>');
 		return $data;
 	}
+    public function getPlayers($id)
+    {
+        $db = JFactory::getDBO();
+
+        $query = "SELECT name, birth_date, position, season_played_games, total_played_games, score, biography FROM #__sports_teams_players WHERE team_id = ".$id;
+
+        $db->setQuery($query);
+
+        return $db->loadObjectList();
+    }
 }

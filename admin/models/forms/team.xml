@@ -1,19 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Id: team.xml 51 2010-11-22 01:33:21Z chdemko $ -->
 <form>
-	<fieldset>
+	<fieldset name="team_deatils">
 		<field
 			name="id"
 			type="hidden"
 		/>
 		<field
-			name="greeting"
+			name="name"
 			type="text"
-			label="Sports teams greeting label"
-			description="Sports teams greeting"
+			label="Name: "
+			description="Sports teams name"
 			size="40"
 			class="inputbox"
 			default=""
 		/>
+        <field
+            name="score"
+            type="text"
+            label="Score: "
+            description="Sports teams score"
+            size="40"
+            class="inputbox"
+            default=""
+        />
+        <field
+            name="sport"
+            type="text"
+            label="Sport: "
+            description="Sports teams sport"
+            size="40"
+            class="inputbox"
+            default=""
+        />
 	</fieldset>
+
+    <fieldset name="player_details">
+        <field
+                name="id"
+                type="hidden"
+                />
+        <field
+                name="player_name"
+                type="text"
+                label=""
+                description="Player's name"
+                size="40"
+                class="inputbox"
+                default=""
+                />
+        <field
+                name="birth_date"
+                type="text"
+                label=""
+                description="Player's birth date"
+                size="40"
+                class="inputbox"
+                default=""
+                />
+        <field
+                name="position"
+                type="text"
+                label=""
+                description="Sports teams sport"
+                size="40"
+                class="inputbox"
+                default=""
+                />
+        <field
+                name="season_played_games"
+                type="text"
+                label=""
+                description="Sports teams sport"
+                size="40"
+                class="inputbox"
+                default=""
+                />
+        <field
+                name="total_played_games"
+                type="text"
+                label=""
+                description="Sports teams sport"
+                size="40"
+                class="inputbox"
+                default=""
+                />
+        <field
+                name="score"
+                type="text"
+                label=""
+                description="Sports teams sport"
+                size="40"
+                class="inputbox"
+                default=""
+                />
+        <field
+                name="biography"
+                type="text"
+                label=""
+                description="Sports teams sport"
+                size="40"
+                class="inputbox"
+                default=""
+                />
+    </fieldset>
 </form>

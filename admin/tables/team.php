@@ -29,6 +29,6 @@ class TeamTableTeam extends JTable
 	function __construct(&$db) 
 	{
         //check the name of the table later
-		parent::__construct('#__helloworld', 'id', $db);
+		parent::__construct('#__sports_teams', 'id', $db);
 	}
 }
